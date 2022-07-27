@@ -1,0 +1,15 @@
+{
+  "packageManager": "yarn@3.2.2",
+  "name": "yarn-monorepo-starter",
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "wsrun": "^5.2.4"
+  }
+}
